@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parwar Yassin | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Parwar</div>
+      <div class="nav-items">
+        <div class="theme-switch">
+          <input type="checkbox" id="theme-toggle" />
+          <label for="theme-toggle" class="switch">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </label>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Now html code for hamburger menu  -->
+
+    <nav id="hamburger-nav">
+      <div class="logo">Parwar</div>
+
+      <!-- logo div shows logo -->
+      <div class="hamburger-menu">
+        <div class="theme-switch mobile">
+          <input type="checkbox" id="mobile-theme-toggle" />
+          <label for="mobile-theme-toggle" class="switch">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </label>
+        </div>
+        <!-- hamburger-menu div contains all elements of hamburger menu -->
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile section -->
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile.jpeg"
+          alt="Parwar Yassin profile picture"
+          class="myphoto"
+        />
+      </div>
+
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Parwar Yassin</h1>
+        <p class="section__text__p2">Full Stack Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile Picture"
+            class="about-pic"
+          />
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Professional Summary</h3>
+              <p>Full Stack Web Developer<br />Next.js & Node.js Expert</p>
+            </div>
+
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education Icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Bachelor of Software Engineering<br />Qaiwan International
+                University
+              </p>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <p>
+              Innovative Full-Stack Developer with expertise in Next.js,
+              Node.js, Prisma, and PostgreSQL, dedicated to building
+              high-performance web applications that solve real-world problems.
+              Adept at leveraging modern frameworks and crafting efficient code
+              to enhance system performance and user experience. Proven ability
+              to deliver scalable solutions (e.g., ERP system) with secure
+              architectures and intuitive UX by working with multiple UI
+              libraries.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article class="icon">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                </div>
+              </article>
+              <article class="icon">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Next.js</h3>
+                </div>
+              </article>
+              <article class="icon">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                </div>
+              </article>
+              <article class="icon">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Zod</h3>
+                </div>
+              </article>
+              <article class="icon">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML/CSS</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article class="icon">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node.js</h3>
+                </div>
+              </article>
+              <article class="icon">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>REST APIs</h3>
+                </div>
+              </article>
+              <article class="icon">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tanstack Query</h3>
+                </div>
+              </article>
+              <article class="icon">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Prisma</h3>
+                </div>
+              </article>
+              <article class="icon">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">DevOps & Professional</h2>
+            <div class="article-container">
+              <article class="icon">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+              <article class="icon">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Terminal</h3>
+                </div>
+              </article>
+              <article class="icon">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Vercel</h3>
+                </div>
+              </article>
+              <article class="icon">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Neon</h3>
+                </div>
+              </article>
+              <article class="icon">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Problem Solving</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="ERP System"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Enterprise Resource Planning (ERP) System
+            </h2>
+            <p class="project-description">
+              Developed and launched a full-stack ERP system, reducing manual
+              workflows by 40% through automated processes using Next.js,
+              Node.js, Prisma, and PostgreSQL.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = '#'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = '#'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Tourism Website"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Tourism & Travel Company Landing Page
+            </h2>
+            <p class="project-description">
+              Developing a dynamic, visually appealing, and responsive landing
+              page with advanced UI/UX features, including smooth animations and
+              3D scrolling animations.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = '#'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = '#'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Portfolio Website"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Portfolio Website
+            </h2>
+            <p class="project-description">
+              A responsive personal portfolio website featuring dark/light theme
+              toggle, interactive UI elements, and showcase of skills and
+              projects.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = '#'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = './#profile'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href = './#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email Icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:parwaryasin13@gmail.com">parwaryasin13@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="Phone Icon"
+            class="icon contact-icon"
+          />
+          <p><a href="tel:+9640772505862">+(964) 0772 505 88 62</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn Icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Parwar Yassin All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
