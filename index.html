@@ -31,12 +31,8 @@
       </div>
     </nav>
 
-    <!-- Now html code for hamburger menu  -->
-
     <nav id="hamburger-nav">
       <div class="logo">Parwar</div>
-
-      <!-- logo div shows logo -->
       <div class="hamburger-menu">
         <div class="theme-switch mobile">
           <input type="checkbox" id="mobile-theme-toggle" />
@@ -45,7 +41,6 @@
             <i class="fas fa-moon"></i>
           </label>
         </div>
-        <!-- hamburger-menu div contains all elements of hamburger menu -->
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
@@ -61,15 +56,15 @@
       </div>
     </nav>
 
-    <!-- Profile section -->
-
     <section id="profile">
       <div class="section__pic-container">
-        <img
-          src="./assets/profile.jpeg"
-          alt="Parwar Yassin profile picture"
-          class="myphoto"
-        />
+        <div class="profile-image-wrapper">
+          <img
+            src="./assets/profile.jpeg"
+            alt="Parwar Yassin profile picture"
+            class="myphoto"
+          />
+        </div>
       </div>
 
       <div class="section__text">
@@ -90,18 +85,28 @@
         </div>
 
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </a>
         </div>
       </div>
     </section>
@@ -111,11 +116,13 @@
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.jpg"
-            alt="Profile Picture"
-            class="about-pic"
-          />
+          <div class="about-image-wrapper">
+            <img
+              src="./assets/about-pic.jpg"
+              alt="Profile Picture"
+              class="about-pic"
+            />
+          </div>
         </div>
 
         <div class="about-details-container">
@@ -175,7 +182,7 @@
           <div class="details-container">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
-              <article class="icon">
+              <article class="skill-item">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience Icon"
@@ -185,7 +192,7 @@
                   <h3>React</h3>
                 </div>
               </article>
-              <article class="icon">
+              <article class="skill-item">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience Icon"
@@ -195,7 +202,7 @@
                   <h3>Next.js</h3>
                 </div>
               </article>
-              <article class="icon">
+              <article class="skill-item">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience Icon"
@@ -205,7 +212,7 @@
                   <h3>TypeScript</h3>
                 </div>
               </article>
-              <article class="icon">
+              <article class="skill-item">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience Icon"
@@ -215,7 +222,7 @@
                   <h3>Zod</h3>
                 </div>
               </article>
-              <article class="icon">
+              <article class="skill-item">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience Icon"
@@ -231,7 +238,7 @@
           <div class="details-container">
             <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
-              <article class="icon">
+              <article class="skill-item">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience Icon"
@@ -241,7 +248,7 @@
                   <h3>Node.js</h3>
                 </div>
               </article>
-              <article class="icon">
+              <article class="skill-item">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience Icon"
@@ -251,7 +258,7 @@
                   <h3>REST APIs</h3>
                 </div>
               </article>
-              <article class="icon">
+              <article class="skill-item">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience Icon"
@@ -261,7 +268,7 @@
                   <h3>Tanstack Query</h3>
                 </div>
               </article>
-              <article class="icon">
+              <article class="skill-item">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience Icon"
@@ -271,7 +278,7 @@
                   <h3>Prisma</h3>
                 </div>
               </article>
-              <article class="icon">
+              <article class="skill-item">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience Icon"
@@ -286,7 +293,7 @@
           <div class="details-container">
             <h2 class="experience-sub-title">DevOps & Professional</h2>
             <div class="article-container">
-              <article class="icon">
+              <article class="skill-item">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience Icon"
@@ -296,7 +303,7 @@
                   <h3>Git</h3>
                 </div>
               </article>
-              <article class="icon">
+              <article class="skill-item">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience Icon"
@@ -306,7 +313,7 @@
                   <h3>Terminal</h3>
                 </div>
               </article>
-              <article class="icon">
+              <article class="skill-item">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience Icon"
@@ -316,7 +323,7 @@
                   <h3>Vercel</h3>
                 </div>
               </article>
-              <article class="icon">
+              <article class="skill-item">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience Icon"
@@ -326,7 +333,7 @@
                   <h3>Neon</h3>
                 </div>
               </article>
-              <article class="icon">
+              <article class="skill-item">
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience Icon"
@@ -353,42 +360,31 @@
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+          <!-- Multi-Tenant Gym Management System -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
-                alt="ERP System"
+                src="./assets/gym-management.png"
+                alt="Multi-Tenant Gym Management System"
                 class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">
-              Enterprise Resource Planning (ERP) System
+              Multi-Tenant Gym Management System
             </h2>
             <p class="project-description">
-              Developed and launched a full-stack ERP system, reducing manual
-              workflows by 40% through automated processes using Next.js,
-              Node.js, Prisma, and PostgreSQL.
+              Designed and implemented a scalable gym management platform
+              supporting multiple tenants, enabling gyms to manage memberships,
+              plans, and finances efficiently. Built with Next.js, Node.js,
+              Prisma, and PostgreSQL, featuring advanced analytics and
+              role-based dashboards.
             </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href = '#'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href = '#'"
-              >
-                Live Demo
-              </button>
-            </div>
           </div>
-
+          <!-- Tourism & Travel Company Landing Page -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/tourism-landing.png"
                 alt="Tourism Website"
                 class="project-img"
               />
@@ -401,52 +397,6 @@
               page with advanced UI/UX features, including smooth animations and
               3D scrolling animations.
             </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href = '#'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href = '#'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Portfolio Website"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Portfolio Website
-            </h2>
-            <p class="project-description">
-              A responsive personal portfolio website featuring dark/light theme
-              toggle, interactive UI elements, and showcase of skills and
-              projects.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href = '#'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href = './#profile'"
-              >
-                Live Demo
-              </button>
-            </div>
           </div>
         </div>
       </div>
@@ -486,7 +436,14 @@
             alt="LinkedIn Icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/">LinkedIn</a></p>
+          <p>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </p>
         </div>
       </div>
     </section>
@@ -502,7 +459,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 Parwar Yassin All Rights Reserved.</p>
+      <p>Copyright &#169; 2025 Parwar Yassin. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>

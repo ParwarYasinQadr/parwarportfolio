@@ -1,14 +1,24 @@
+/* name mediaquerdies */
+/* mediaqueries.css - Fixed and improved responsive design */
+
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
+    height: auto;
     margin-bottom: 6rem;
+    padding-bottom: 6rem;
   }
+
   .about-containers {
     flex-wrap: wrap;
   }
+
   #contact,
   #projects {
     height: fit-content;
+  }
+
+  section {
+    margin: 0 8%;
   }
 }
 
@@ -16,37 +26,66 @@
   #desktop-nav {
     display: none;
   }
+
   #hamburger-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 0 2rem;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-color);
+    box-shadow: 0 3px 10px var(--shadow-color);
+    z-index: 1000;
   }
+
   #experience,
   .experience-details-container {
     margin-top: 2rem;
   }
+
   #profile,
   .section-container {
     display: block;
   }
+
   .arrow {
     display: none;
   }
+
   section,
   .section-container {
     height: fit-content;
   }
+
   section {
-    margin: 0 5%;
+    margin: 0 8%;
+    padding-top: 10vh;
   }
+
   .section__pic-container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
   }
+
   .about-containers {
     margin-top: 0;
+  }
+
+  #profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+  }
+
+  /* Animation adjustments for mobile */
+  .section__text,
+  .section__pic-container {
+    animation: fadeIn 1s ease-in-out;
   }
 }
 
@@ -56,54 +95,73 @@
     height: fit-content;
     padding: 2rem 0;
   }
+
   #profile {
     height: fit-content;
     margin-bottom: 2rem;
     padding-top: 2rem;
   }
+
   article {
     font-size: 1rem;
   }
+
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
   }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
   }
+
   .contact-info-container {
     margin: 0.5rem;
+    padding: 0.8rem;
   }
+
   .contact-info-container p,
   .nav-links li a {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
+
   .experience-sub-title {
     font-size: 1.25rem;
   }
+
   .logo {
     font-size: 1.5rem;
   }
+
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
+
   .section__pic-container {
     width: 220px;
     height: 220px;
     justify-content: center;
   }
+
   .section__text__p2 {
     font-size: 1.25rem;
   }
+
+  .section__text__p1 {
+    font-size: 1rem;
+  }
+
   .title {
     font-size: 2rem;
   }
+
   .text-container {
     text-align: justify;
+    padding: 1rem;
   }
 
   .theme-switch.mobile {
@@ -115,5 +173,47 @@
 
   .project-description {
     font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 0.8rem;
+    width: 7rem;
+    font-size: 0.9rem;
+  }
+
+  .skill-item {
+    padding: 0.6rem 1rem;
+    width: 90%;
+  }
+
+  /* Adjust icon size for better mobile experience */
+  .icon {
+    height: 1.8rem;
+  }
+
+  /* Better spacing for mobile */
+  .details-container {
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust hamburger menu for better mobile experience */
+  .menu-links.open {
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+  }
+
+  /* Fix mobile contact info layout */
+  .contact-info-upper-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .contact-info-container {
+    width: 90%;
   }
 }
